@@ -1,0 +1,16 @@
+{
+    "name": "dssika/buscador-cursos",
+    "description": "Projeto que busca cursos no site da Alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jessica",
+            "email": "jessica.si.ufs@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "symfony/dom-crawler": "^7.3",
+        "symfony/css-selector": "^7.3"
+    }
+}
