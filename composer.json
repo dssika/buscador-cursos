@@ -44,5 +44,6 @@
         "phan": "Roda o Phan para verificar erros estáticos no código",
         "check": "Roda verificações de qualidade no código: Phan, PHP CodeSniffer e PHPUnit"
     },
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "bin": ["buscar-cursos.php"]
 }
