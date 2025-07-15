@@ -22,5 +22,26 @@
         "phpunit/phpunit": "12",
         "squizlabs/php_codesniffer": "*",
         "phan/phan": "^5.5"
+    },
+    "scripts": {
+        "test": "phpunit tests\\TestBuscadorCursos.php",
+        "cs": "phpcs --standard=PSR12 src",
+        "phan": "phan --allow-polyfill-parser",
+        "ls": "dir",
+        "limpar-cache": "del /f /s /q \"cache\" && rmdir /s /q \"cache\"",
+        "check": [
+            "@phan",
+            "@cs",
+            "@test"
+        ],
+        "post-update-cmd": [
+            "@test"
+        ]
+    },
+    "scripts-descriptions": {
+        "test": "Roda os testes do PHPUnit",
+        "cs": "Roda o PHP CodeSniffer para verificar o padrão de código",
+        "phan": "Roda o Phan para verificar erros estáticos no código",
+        "check": "Roda verificações de qualidade no código: Phan, PHP CodeSniffer e PHPUnit"
     }
 }
