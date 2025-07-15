@@ -43,5 +43,6 @@
         "cs": "Roda o PHP CodeSniffer para verificar o padrão de código",
         "phan": "Roda o Phan para verificar erros estáticos no código",
         "check": "Roda verificações de qualidade no código: Phan, PHP CodeSniffer e PHPUnit"
-    }
+    },
+    "license": "GNU GPLv3"
 }
